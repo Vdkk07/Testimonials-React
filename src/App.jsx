@@ -1,0 +1,18 @@
+import React from "react";
+import Testimonials from "./components/Testimonials";
+import reviews from "./data";
+const App = () => {
+  return (
+    <div className="flex flex-col justify-center items-center w-[100vw] h-[100vh] bg-gray-200">
+      <div className="text-center">
+        <h1 className=" text-4xl font-bold">Our Testimonials</h1>
+
+        <div className="w-1/5 h-[4px] bg-violet-400 mt-1 mx-auto"></div>
+
+        <Testimonials reviews={reviews} />
+      </div>
+    </div>
+  );
+};
+
+export default App;
